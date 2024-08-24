@@ -1,0 +1,92 @@
+.background{
+    background-color: rgb(5, 5, 45);
+    min-height: 97vh;
+    padding-top:100px;
+}
+.header{
+    font-size: 30px;;
+    font-weight:bold;
+    color: rgb(249, 172, 113);
+    border-bottom : solid rgb(249, 172, 113) 2px;
+    text-align:center;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.loading-animation{
+    animation: rotation infinite 2s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.hidden{
+    visibility: hidden;
+}
+.displaybox-row{
+    display:flex;
+    margin-left: 590px;
+}
+.cubic-displaybox{
+    width:40px;
+    height:40px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    background-color: rgb(5, 5, 45);
+    border : solid 3px rgb(249, 172, 113);;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    animation:infinite
+}
+@keyframes rotation{ 
+    to{
+        transform: rotate(360deg);
+    } 
+}
+@keyframes flash{
+    from{
+        border-color:rgb(255, 0, 0);
+    }
+    to{
+        border-color:rgb(249, 172, 113);
+    }
+}
+@keyframes rainbow {
+    from{
+        color:rgb(253, 110, 0)
+    }
+    20%
+    {
+        color:rgb(241, 165, 106)
+    }
+    30%{
+        color: rgb(164, 238, 147);
+    }
+    40%
+    {
+        color:rgb(228, 176, 135)
+    }
+    50%
+    {
+        color:rgb(63, 61, 61);
+    }
+    60%
+    {
+        color:rgb(246, 209, 181)
+    }
+    80%{
+        color:rgb(208, 208, 105)
+    }
+    90%{
+        color:rgb(227, 62, 62)
+    }
+    to{
+        color:rgb(225, 144, 141)
+    }
+}
